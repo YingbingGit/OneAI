@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "One AI",
+  "short_name": "One AI",
+  "version": "1.0.0",
+  "description": "One AI: Engage, Discover, Automate, and Explore all gernerated AIs in one streamlined platform.",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage", "contextMenus"],
+  "action": {
+    "default_icon": {
+      "32": "images/gemini_32.png",
+      "64": "images/gemini_64.png",
+      "128": "images/gemini_128.png"
+    },
+    "default_title": "One AI Sidebar"
+  },
+  "commands": {
+    "openWindow": {
+      "suggested_key": {
+        "default": "Ctrl+B",
+        "windows": "Ctrl+B",
+        "mac": "Command+B",
+        "chromeos": "Ctrl+B",
+        "linux": "Ctrl+B"
+      },
+      "description": "One AI: Engage, Discover, Automate, and Explore One AI streamlined platform."
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "32": "images/gemini_32.png",
+    "64": "images/gemini_64.png",
+    "128": "images/gemini_128.png"
+  }
+}
