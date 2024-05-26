@@ -2,7 +2,6 @@
   "manifest_version": 3,
   "name": "One AI",
   "short_name": "One AI",
-  "version": "1.0.0",
   "description": "One AI: Engage, Discover, Automate, and Explore all gernerated AIs in one streamlined platform.",
   "background": {
     "service_worker": "background.js"
@@ -19,13 +18,13 @@
   "commands": {
     "openWindow": {
       "suggested_key": {
-        "default": "Ctrl+B",
-        "windows": "Ctrl+B",
-        "mac": "Command+B",
-        "chromeos": "Ctrl+B",
-        "linux": "Ctrl+B"
+        "default": "Ctrl+Shift+K",
+        "windows": "Ctrl+Shift+K",
+        "mac": "Command+Shift+K",
+        "chromeos": "Ctrl+Shift+K",
+        "linux": "Ctrl+Shift+K"
       },
-      "description": "One AI: Engage, Discover, Automate, and Explore One AI streamlined platform."
+      "description": "Open the AI window"
     }
   },
   "content_scripts": [
@@ -38,5 +37,6 @@
     "32": "images/gemini_32.png",
     "64": "images/gemini_64.png",
     "128": "images/gemini_128.png"
-  }
+  },
+  "version": "1.0.2"
 }
